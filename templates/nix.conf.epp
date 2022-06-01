@@ -1,0 +1,12 @@
+# This file is managed by Puppet, any changes will be overwritten
+
+experimental-features = <%= $nix::experimental_features.join(' ') %>
+substituters = <%= $nix::substituters.join(' ') %>
+trusted-public-keys = <%= $nix::trusted_public_keys.join(' ') %>
+trusted-users = <%= $nix::trusted_users.join(' ') %>
+allowed-users = <%= $nix::allowed_users.join(' ') %>
+system-features = <%= $nix::system_features.join(' ') %>
+build-users-group = nixbld
+max-jobs = auto
+cores = 0
+sandbox = true

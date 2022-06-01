@@ -1,0 +1,8 @@
+[formatter.puppet-lint]
+command = "puppet-lint"
+options = ["--fail-on-warnings"]
+includes = ["*.pp"]
+
+[formatter.ruby]
+command = "rubocop"
+includes = ["*.rb"]

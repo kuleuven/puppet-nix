@@ -1,0 +1,17 @@
+# This file can be used to install module dependencies for unit testing
+# See https://github.com/puppetlabs/puppetlabs_spec_helper#using-fixtures for details
+---
+fixtures:
+  forge_modules:
+    sudo: 
+      repo: saz/sudo
+      ref: 7.0.2
+    stdlib:
+      repo: puppetlabs/stdlib
+      ref: 8.2.0
+  repositories:
+    puppet_agent: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
+    provision: 'https://github.com/puppetlabs/provision.git'
+    facts: 'https://github.com/puppetlabs/puppetlabs-facts.git'
+  symlinks:
+    nix: "#{source_dir}"
