@@ -11,7 +11,7 @@ class nix::install {
 
   user {
     'nix':
-      shell => '/sbin/nologin'
+      shell => '/bin/false'
   }
 
   include ::sudo
